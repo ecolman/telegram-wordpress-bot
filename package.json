@@ -1,0 +1,15 @@
+{
+  "name": "wpBot",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {},
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1",
+    "telegram-node-bot": "^4.0.3",
+    "wordpress": "^1.3.0"
+  },
+  "devDependencies": {}
+}
