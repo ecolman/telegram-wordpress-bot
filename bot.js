@@ -16,7 +16,10 @@ const taxonomy = 'category';
 const wpClient = wordpress.createClient({
     url: site,
     username: 'wordpressUser',
-    password: 'password'
+    password: 'password',
+    polling: {
+        timeout: 0
+    }
 });
 
 // telegram user to wordpress author id/name map
