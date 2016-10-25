@@ -8,7 +8,7 @@ const templates = require('./templates');
 
 const TelegramBaseController = Telegram.TelegramBaseController;
 const TextCommand = Telegram.TextCommand;
-const tg = new Telegram.Telegram('');
+const tg = new Telegram.Telegram('TELEGRAM_TOKEN');
 const site = 'mysite.com';
 const taxonomy = 'category';
 

@@ -1,10 +1,11 @@
-## Wordpress Telegram Bot
-Listens for */post http://www.link.com* sent in a Telegram chat and publishes a Wordpress post of the link
+## Telegram WordPress Bot
+Listens in a Telegram chat and publishes a WordPress post with a Telegram-like link preview template
 
 ### Setup
   1. Get a bot key for Telegram from the [@botfather](https://core.telegram.org/bots)
   2. Have a valid login for a WordPress blog
   3. Get the author data from WordPress for mapping Telegram users to WordPress users (look at the url when managing an individual user in WordPress, user_id parameter)
+  4. Edit `templates.js` to adjust template for your needs
 
 In the code there are some obvious places to put your Telegram api code and WordPress login info.  Also make sure to put at least one user in the `usersDict` for mapping the Telegram user to post author.
 
