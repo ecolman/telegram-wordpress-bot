@@ -107,7 +107,7 @@ class WpPostController extends TelegramBaseController {
         if (command.indexOf(arg) > -1) {
             let pos = command.indexOf(arg);
             let slice = command.indexOf('-', pos + 2);
-            let argumentValue = command.slice(pos + 3, (slice > -1 ? slice : command.length));
+            argumentValue = command.slice(pos + 3, (slice > -1 ? slice : command.length));
         }
 
         return argumentValue;
@@ -162,7 +162,7 @@ class WpPostController extends TelegramBaseController {
         let postAnno = this.grabArgument(text, 'a');
 
         if (postAnno !== null) {
-            post.annotation = annotation;
+            post.annotation = postAnno;
         }
     }
 
