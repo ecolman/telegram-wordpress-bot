@@ -104,10 +104,10 @@ class WpPostController extends TelegramBaseController {
         let arg = '-' + argument + ' ';
         let argumentValue = null;
 
-        if (text.indexOf(arg) > -1) {
-            let pos = text.indexOf(arg);
-            let slice = text.indexOf('-', pos + 2);
-            let argumentValue = text.slice(pos + 3, (slice > -1 ? slice : text.length));
+        if (command.indexOf(arg) > -1) {
+            let pos = command.indexOf(arg);
+            let slice = command.indexOf('-', pos + 2);
+            let argumentValue = command.slice(pos + 3, (slice > -1 ? slice : command.length));
         }
 
         return argumentValue;
